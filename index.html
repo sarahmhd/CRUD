@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--=============== FAVICON ===============-->
+  <link rel="shortcut icon" href="assets/img/arrow.png" type="image/x-icon">
+  <!--=============== BOXICONS ===============-->
+  <!--=============== LIGHTBOX ===============-->
+  <!--=============== BootsTrap ===============-->
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!--=============== Animate ===============-->
+  <!--=============== Swiper ===============-->
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <title>CRUD</title>
+</head>
+
+<body>
+
+  <div class="crud-system">
+    <div class="container">
+      <div class="header">
+        <h1 class="crud-title">CRUDs</h1>
+        <!-- <p class="info">create read update delete search</p> -->
+        <p class="info">product managment system</p>
+      </div>
+      <div class="form">
+        <div class="form-group">
+          <input type="text" placeholder="Title" class="title" id="title" required />
+        </div>
+
+        <div class="form-group d-flex inputs">
+          <input type="number" name="price" id="price" class="price" placeholder="price" required>
+          <input type="number" name="taxes" id="taxes" class="taxes" placeholder="taxes">
+          <input type="number" name="ads" id="ads" class="ads" placeholder="ads">
+          <input type="number" name="discount" id="discount" class="discount" placeholder="discount">
+          <div class="total"></div>
+        </div>
+
+        <div class="form-group">
+          <input type="number" placeholder="count" class="count" id="count" />
+        </div>
+
+        <div class="form-group">
+          <input type="text" placeholder="category" class="category" id="category" required />
+        </div>
+
+        <div class="form-group">
+          <button type="submit" name="create" id="create" class="create w-100">create</button>
+        </div>
+
+        <div class="form-group">
+          <input type="search" placeholder="search" name="search" id="search" class="search">
+        </div>
+
+        <div class="form-group d-flex btns">
+          <button type="submit" name="search-by-titile" id="search-title" class="search-title w-25">search by
+            title</button>
+          <button type="submit" name="search-by-category" id="search-category" class="search-category w-25">search by
+            category</button>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" name="delete-all" id="delete-all" class="delete-all">delete all</button>
+        </div>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>id</th>
+            <th>title</th>
+            <th>price</th>
+            <th>taxes</th>
+            <th>ads</th>
+            <th>discount</th>
+            <th>total</th>
+            <th>category</th>
+            <th>update</th>
+            <th>delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- <tr>
+            <td>1</td>
+            <td>samsong</td>
+            <td>2000</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>2200</td>
+            <td>phone</td>
+            <td><button class="upd">update</button></td>
+            <td><button class="del">delete</button></td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>samsong</td>
+            <td>2000</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>2200</td>
+            <td>phone</td>
+            <td><button class="upd">update</button></td>
+            <td><button class="del">delete</button></td>
+          </tr> -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/all.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

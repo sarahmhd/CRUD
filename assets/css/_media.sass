@@ -1,0 +1,28 @@
+
+/* For large devices */
+// @media only screen and (min-width: 1200px)
+
+/* For medium devices */
+// @media only screen and (min-width: 769px) and (max-width: 1199px)
+
+// /* For small devices */
+@media (max-width: 768px)
+    body
+        overflow-x: hidden !important
+    .form
+        .inputs
+            flex-direction: column
+            input
+                width: 100% !important
+            .total
+                margin-bottom: 10px
+        .btns
+            button
+                width: 45% !important
+                font-size: 15px
+    table
+        font-size: 9px !important
+        th:not(:nth-of-type(8))
+            padding-right: 10px !important
+        th:nth-of-type(9)
+            padding-right: 0 !important

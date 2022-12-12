@@ -1,0 +1,108 @@
+
+// =============== GOOGLE FONTS ===============
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600&display=swap')
+/*=============== 1- components --> Colors , --> mixins , etc... ===============*/
+@import 'components'
+/*========== components ==========*/
+@import 'media'
+/*=============== 2- General Style ===============*/
+*
+    box-sizing: border-box
+    padding: 0
+    margin: 0
+button
+    padding: 10px 20px
+    border: none
+    border-radius: 24px
+    text-transform: capitalize
+    color: #fff
+    background: #080842
+    transition: 0.5s
+    &:hover
+        opacity: 0.8
+.crud-system
+    width: 100vw
+    min-height: 100vh
+    background: #222
+    color: #fff
+    color: #eee
+    .header
+        text-align: center
+        text-transform: uppercase
+        padding: 30px
+        h1
+        p
+    .form
+        .form-group
+            text-align: center
+            input
+                width: 100%
+                padding: 10px
+                margin-bottom: 10px
+                border-radius: 5px
+                border: none
+                background: #111
+                color: #fff
+                transition: 0.5s
+                &:focus
+                    outline: none
+                    transform: scale(1.1)
+                &::-webkit-outer-spin-button,
+                &::-webkit-inner-spin-button
+                    appearance: textfield
+                    &:focus
+                        appearance: auto
+            input[type="number"]
+                appearance: textfield
+                &:focus
+                    appearance: auto !important
+                    -webkit-appearance: auto !important
+                    opacity: 1 !important
+            button
+                padding: 10px 30px
+                border: none
+                border-radius: 24px
+                margin-bottom: 10px
+                text-transform: capitalize
+                letter-spacing: 1px
+                color: #fff
+                background: #080842
+                transition: 0.5s
+                &:hover
+                    opacity: 0.8
+            button.delete-all
+                background: #af1313
+                transition: 0.5s
+                position: relative
+                min-width: 20%
+                text-align: center
+                &::after
+                    content: attr(data-content)
+                    position: absolute
+            .total
+                background: #af1313
+                // padding: 10px
+                height: 100%
+                padding: 10px
+                &::before
+                    content: "Total: "
+        .form-group.d-flex
+            justify-content: space-between
+            // align-items: center
+            input
+                width: calc( 100% / 4 - 4%)
+    table
+        width: 100%
+        text-align: center
+        margin-top: 20px
+        th
+            text-transform: uppercase
+        td
+            text-transform: capitalize
+        tr
+            border-bottom: 1px solid #111
+        td,th
+            padding: 10px 0
+        td
+            button.del
+                background: #af1313

@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600&display=swap");
+/*=============== 1- components --> Colors , --> mixins , etc... ===============*/
+/*========== components ==========*/
+/* For large devices */
+/* For medium devices */
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden !important;
+  }
+  .form .inputs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form .inputs input {
+    width: 100% !important;
+  }
+  .form .inputs .total {
+    margin-bottom: 10px;
+  }
+  .form .btns button {
+    width: 45% !important;
+    font-size: 15px;
+  }
+  table {
+    font-size: 9px !important;
+  }
+  table th:not(:nth-of-type(8)) {
+    padding-right: 10px !important;
+  }
+  table th:nth-of-type(9) {
+    padding-right: 0 !important;
+  }
+}
+
+/*=============== 2- General Style ===============*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 24px;
+  text-transform: capitalize;
+  color: #fff;
+  background: #080842;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.crud-system {
+  width: 100vw;
+  min-height: 100vh;
+  background: #222;
+  color: #fff;
+  color: #eee;
+}
+
+.crud-system .header {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 30px;
+}
+
+.crud-system .form .form-group {
+  text-align: center;
+}
+
+.crud-system .form .form-group input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  background: #111;
+  color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.crud-system .form .form-group input:focus {
+  outline: none;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.crud-system .form .form-group input::-webkit-outer-spin-button, .crud-system .form .form-group input::-webkit-inner-spin-button {
+  -webkit-appearance: textfield;
+          appearance: textfield;
+}
+
+.crud-system .form .form-group input::-webkit-outer-spin-button:focus, .crud-system .form .form-group input::-webkit-inner-spin-button:focus {
+  -webkit-appearance: auto;
+          appearance: auto;
+}
+
+.crud-system .form .form-group input[type="number"] {
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
+}
+
+.crud-system .form .form-group input[type="number"]:focus {
+  -moz-appearance: auto !important;
+       appearance: auto !important;
+  -webkit-appearance: auto !important;
+  opacity: 1 !important;
+}
+
+.crud-system .form .form-group button {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 24px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  color: #fff;
+  background: #080842;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.crud-system .form .form-group button:hover {
+  opacity: 0.8;
+}
+
+.crud-system .form .form-group button.delete-all {
+  background: #af1313;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: relative;
+  min-width: 20%;
+  text-align: center;
+}
+
+.crud-system .form .form-group button.delete-all::after {
+  content: attr(data-content);
+  position: absolute;
+}
+
+.crud-system .form .form-group .total {
+  background: #af1313;
+  height: 100%;
+  padding: 10px;
+}
+
+.crud-system .form .form-group .total::before {
+  content: "Total: ";
+}
+
+.crud-system .form .form-group.d-flex {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.crud-system .form .form-group.d-flex input {
+  width: calc( 100% / 4 - 4%);
+}
+
+.crud-system table {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.crud-system table th {
+  text-transform: uppercase;
+}
+
+.crud-system table td {
+  text-transform: capitalize;
+}
+
+.crud-system table tr {
+  border-bottom: 1px solid #111;
+}
+
+.crud-system table td, .crud-system table th {
+  padding: 10px 0;
+}
+
+.crud-system table td button.del {
+  background: #af1313;
+}
+/*# sourceMappingURL=styles.css.map */
